@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Charm&family=Lateef&family=Merienda&family=Redressed&family=Satisfy&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: url('bg.jpg');
+    background-size: contain;
+}
+
+.content #name {
+    position: absolute;
+    top: 28vh;
+    left: 60px;
+    font-family: 'Satisfy', cursive;
+    color: white;
+    text-shadow: 0 0 10px rgb(181, 181, 181);
+    font-size: 8rem;
+    margin: 0;
+    z-index: 2;
+}
+
+.content #text {
+    position: absolute;
+    font-family: 'Lateef', cursive;
+    color: white;
+    font-size: 3.5rem;
+    margin: 0;
+    z-index: 2;
+    text-align: center;
+    top: 55vh;
+    left: 25vw;
+    line-height: 2.8rem;
+}
+
+.corazon {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 120px;
+    left: -60px;
+    background: url("corazon.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+    position: relative;
+    animation: rotacion 0.5s ease-in infinite;
+}
+
+@keyframes rotacion {
+    0% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
